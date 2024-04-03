@@ -9,7 +9,7 @@
           "name": "M98B MC",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_M98B_mc.png",
+          "image": "images/Image_M98B_mc.png",
           "more": [],
           "price": 125000
         },
@@ -18,7 +18,7 @@
           "name": "M98B Wood",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_M98B_wood.png",
+          "image": "images/Image_M98B_wood.png",
           "more": [],
           "price": 125000
         },
@@ -27,7 +27,7 @@
           "name": "M98B Snow",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_M98B_snow.png",
+          "image": "images/Image_M98B_snow.png",
           "more": [],
           "price": 125000
         },
@@ -36,7 +36,7 @@
           "name": "M98B Digi",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_M98B_snow.png",
+          "image": "images/Image_M98B_snow.png",
           "more": [],
           "price": 125000
         },
@@ -45,7 +45,7 @@
           "name": "M98B Ger",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_M98B_ger.png",
+          "image": "images/Image_M98B_ger.png",
           "more": [],
           "price": 125000
         },
@@ -54,7 +54,7 @@
           "name": "M98B Atac",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_M98B_atac.png",
+          "image": "images/Image_M98B_atac.png",
           "more": [],
           "price": 125000
         },
@@ -63,7 +63,7 @@
           "name": "T5000 Snow",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_T5000_snow.png",
+          "image": "images/Image_T5000_snow.png",
           "more": [],
           "price": 125000
         },
@@ -72,7 +72,7 @@
           "name": "T5000 DKMC",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_T5000_dkmc.png",
+          "image": "images/Image_T5000_dkmc.png",
           "more": [],
           "price": 125000
         },
@@ -81,7 +81,7 @@
           "name": "T5000 Wood",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_T5000_wood.png",
+          "image": "images/Image_T5000_wood.png",
           "more": [],
           "price": 125000
         },
@@ -90,7 +90,7 @@
           "name": "M24A3",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_m24a3.png",
+          "image": "images/Image_m24a3.png",
           "more": [],
           "price": 125000
         },
@@ -99,7 +99,7 @@
           "name": "DVL-10 M2",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_DVL-10-M2.png",
+          "image": "images/Image_DVL-10-M2.png",
           "more": [],
           "price": 125000
         },
@@ -108,7 +108,7 @@
           "name": "Tac-21",
           "type": "buy",
           "description": "",
-          "image": "/images/Image_Tac-21.png",
+          "image": "images/Image_Tac-21.png",
           "more": [],
           "price": 190000
         }
@@ -123,7 +123,7 @@
           "name": "Scar BK",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_bk.png",
+          "image": "images/Image_scar_bk.png",
           "more": [],
           "price": 140000
         },
@@ -132,7 +132,7 @@
           "name": "Scar Tan",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_tan.png",
+          "image": "images/Image_scar_tan.png",
           "more": [],
           "price": 140000
         },
@@ -141,7 +141,7 @@
           "name": "Scar DKMC",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_dkmc.png",
+          "image": "images/Image_scar_dkmc.png",
           "more": [],
           "price": 140000
         },
@@ -150,7 +150,7 @@
           "name": "Scar Snow",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_snow.png",
+          "image": "images/Image_scar_snow.png",
           "more": [],
           "price": 140000
         },
@@ -159,7 +159,7 @@
           "name": "Scar OD",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_od.png",
+          "image": "images/Image_scar_od.png",
           "more": [],
           "price": 140000
         },
@@ -168,7 +168,7 @@
           "name": "Scar Mag. (black)",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_mag_black.png",
+          "image": "images/Image_scar_mag_black.png",
           "more": [],
           "price": 25000
         },
@@ -177,7 +177,7 @@
           "name": "Scar Mag. (tan)",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_scar_mag_tan.png",
+          "image": "images/Image_scar_mag_tan.png",
           "more": [],
           "price": 25000
         },
@@ -186,7 +186,7 @@
           "name": "PKP",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_pkp.png",
+          "image": "images/Image_pkp.png",
           "more": [],
           "price": 205000
         },
@@ -195,7 +195,7 @@
           "name": "PKP Mag.",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_pkp.png",
+          "image": "images/Image_pkp.png",
           "more": [],
           "price": 30000
         },
@@ -204,7 +204,7 @@
           "name": "P90",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_p90.png",
+          "image": "images/Image_p90.png",
           "more": [],
           "price": 400000
         },
@@ -213,7 +213,7 @@
           "name": "P90 Mag.",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_p90_mag.png",
+          "image": "images/Image_p90_mag.png",
           "more": [],
           "price": 20000
         },
@@ -222,7 +222,7 @@
           "name": "Kriss Vector",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_kriss_vector.png",
+          "image": "images/Image_kriss_vector.png",
           "more": [],
           "price": 420000
         },
@@ -231,7 +231,7 @@
           "name": "Kriss Vector Mag.",
           "type": "sell",
           "description": "Магазин вмещает 150 патрон.",
-          "image": "/images/Image_kriss_vector_mag.png",
+          "image": "images/Image_kriss_vector_mag.png",
           "more": [],
           "price": 20000
         },
@@ -240,7 +240,7 @@
           "name": "KAC PDW",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_kac_pdw.png",
+          "image": "images/Image_kac_pdw.png",
           "more": [],
           "price": 480000
         },
@@ -249,7 +249,7 @@
           "name": "KAC PDW Mag.",
           "type": "sell",
           "description": "Магазин вмещает 30 патрон. Продается в черном цвете. Калибр .300AC",
-          "image": "/images/Image_kac_mag_30.png",
+          "image": "images/Image_kac_mag_30.png",
           "more": [],
           "price": 10000
         },
@@ -258,7 +258,7 @@
           "name": "AR15",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_ar15.png",
+          "image": "images/Image_ar15.png",
           "more": [],
           "price": 480000
         },
@@ -267,7 +267,7 @@
           "name": "300AC Mag. на 40",
           "type": "sell",
           "description": "Магазин вмещает 40 патрон. Продается в черном цвете. Калибр .300AC",
-          "image": "/images/Image_300ac_40_black.png",
+          "image": "images/Image_300ac_40_black.png",
           "more": [],
           "price": 20000
         },
@@ -276,7 +276,7 @@
           "name": "300AC Mag. на 40",
           "type": "sell",
           "description": "Магазин вмещает 40 патрон. Продается в песочном цвете. Калибр .300AC",
-          "image": "/images/Image_300ac_40_tan.png",
+          "image": "images/Image_300ac_40_tan.png",
           "more": [],
           "price": 20000
         },
@@ -285,7 +285,7 @@
           "name": "300AC Mag. на 60",
           "type": "sell",
           "description": "Магазин вмещает 60 патрон. Продается в черном цвете. Калибр .300AC",
-          "image": "/images/Image_300ac_60_black.png",
+          "image": "images/Image_300ac_60_black.png",
           "more": [],
           "price": 30000
         },
@@ -294,7 +294,7 @@
           "name": "300AC Mag. на 60",
           "type": "sell",
           "description": "Магазин вмещает 60 патрон. Продается в песочном цвете. Калибр .300AC",
-          "image": "/images/Image_300ac_60_tan.png",
+          "image": "images/Image_300ac_60_tan.png",
           "more": [],
           "price": 30000
         },
@@ -303,7 +303,7 @@
           "name": "Gevar (black)",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_gevar_mk-3_black.png",
+          "image": "images/Image_gevar_mk-3_black.png",
           "more": [],
           "price": 520000
         },
@@ -312,7 +312,7 @@
           "name": "Gevar (tan)",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_gevar_mk-3_tan.png",
+          "image": "images/Image_gevar_mk-3_tan.png",
           "more": [],
           "price": 520000
         },
@@ -321,7 +321,7 @@
           "name": "Gevar (grey)",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_gevar_mk-3_grey.png",
+          "image": "images/Image_gevar_mk-3_grey.png",
           "more": [],
           "price": 520000
         },
@@ -330,7 +330,7 @@
           "name": "Gevar (green)",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_gevar_mk-3_green.png",
+          "image": "images/Image_gevar_mk-3_green.png",
           "more": [],
           "price": 520000
         },
@@ -339,7 +339,7 @@
           "name": "Gevar Mag.",
           "type": "sell",
           "description": "Магазин вмещает 30 патрон",
-          "image": "/images/Image_gevar_mk-3_green.png",
+          "image": "images/Image_gevar_mk-3_green.png",
           "more": [],
           "price": 30000
         }
@@ -354,7 +354,7 @@
           "name": "",
           "type": "sell",
           "description": "",
-          "image": "/images/Image_Tac-21.png",
+          "image": "images/Image_Tac-21.png",
           "more": [],
           "price": 125000
         }
