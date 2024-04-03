@@ -1,16 +1,19 @@
 import { useMemo } from 'react';
+import { useUpdateEffect } from 'react-use';
+import { Typography } from 'elui-react';
 
 import type { TShopGroupItem } from 'services/api';
+import { lamaniFormatter } from 'lib/helpers/lamani-formatter';
+
+import { useShopContext } from '../../hooks';
+import { TotalItem } from '../TotalItem';
 
 import type { TItemTotal } from './types';
+import { StyledFooter, StyledItems } from './styled';
 
-const sumFormatter = new Intl.NumberFormat('ru-RU', {
-  style: 'unit',
-  unit: 'liter',
-  maximumFractionDigits: 0,
-});
+export const ItemTotal = ({ groups }: TItemTotal) => {
+  const { selectedIds } = useShopContext();
 
-export const ItemTotal = ({ selectedIds, groups }: TItemTotal) => {
   const selectedItems = useMemo(() => {
     const items: TShopGroupItem[] = [];
     const groupItems = groups.map(e => e.items).flat(1);
@@ -31,21 +34,26 @@ export const ItemTotal = ({ selectedIds, groups }: TItemTotal) => {
     }, 0);
   }, [selectedIds, selectedItems]);
 
-  if (!sum) return <></>;
+  useUpdateEffect(() => {
+    window.location.hash = selectedIds.length ? `#${btoa(selectedIds.join(','))}` : '#-';
+  }, [selectedIds]);
 
-  const formattedSum = sumFormatter.format(Math.abs(sum));
+  const formattedSum = lamaniFormatter.format(Math.abs(sum));
 
   return (
-    <div>
-      {selectedItems.map(item => (
-        <div key={item.id}>
-          {item.name} ({selectedIds.filter(id => id === item.id).length})
-        </div>
-      ))}
-      <p>
-        {sum < 0 ? `Мы заплатим: ` : `Итого: `}
-        {formattedSum}
-      </p>
-    </div>
+    <>
+      <StyledItems>
+        {!selectedItems.length && <Typography>Ничего не выбрано!</Typography>}
+        {selectedItems.map(item => (
+          <TotalItem key={item.id} {...item} />
+        ))}
+      </StyledItems>
+      <StyledFooter>
+        <Typography>
+          {sum < 0 ? `Мы заплатим: ` : `Итого: `}
+          {formattedSum}
+        </Typography>
+      </StyledFooter>
+    </>
   );
 };

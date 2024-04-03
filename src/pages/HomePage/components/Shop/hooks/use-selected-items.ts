@@ -1,7 +1,16 @@
 import { useCallback, useState } from 'react';
 
 export const useSelectedItems = () => {
-  const [selectedIds, setSelectedIds] = useState<number[]>([]);
+  const [selectedIds, setSelectedIds] = useState<number[]>(() => {
+    const items = window.location.hash.replace('#', '');
+    if (!items.length) return [];
+
+    try {
+      return atob(items).split(',').map(Number);
+    } catch (e) {
+      return [];
+    }
+  });
 
   const add = useCallback((id: number) => {
     setSelectedIds(prev => [...prev, id]);
@@ -19,9 +28,14 @@ export const useSelectedItems = () => {
     });
   }, []);
 
+  const removeAll = useCallback((id: number) => {
+    setSelectedIds(prev => prev.filter(prevId => prevId != id));
+  }, []);
+
   return {
     selectedIds,
     add,
     remove,
+    removeAll,
   };
 };

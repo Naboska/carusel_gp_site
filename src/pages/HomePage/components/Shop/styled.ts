@@ -1,19 +1,26 @@
 import styled from 'styled-components';
 
+import { HEADER_HEIGHT } from './units';
+
+const TOTAL_WIDTH = 400;
+
 export const StyledShop = styled.div`
   position: relative;
-  display: grid;
+  display: flex;
   gap: 24px;
-  grid-template-columns: 1fr 200px;
+  margin: 24px;
+  width: calc(100% - ${TOTAL_WIDTH}px - (24px * 2));
 `;
 
 export const StyledTotalBox = styled.div`
   position: fixed;
-  top: 0;
+  top: ${HEADER_HEIGHT}px;
   right: 0;
-  margin: 24px;
-  padding: 10px;
-  background-color: #e1e1e1;
+  width: ${TOTAL_WIDTH}px;
+  height: calc(100vh - ${HEADER_HEIGHT}px);
+  padding: 24px 24px 0;
+  background-color: ${({ theme }) => theme.palette.white};
+  box-shadow: -1px 0 0 0 ${({ theme }) => theme.palette.grey_200};
 `;
 
 export const StyledShopGroup = styled.ul`
@@ -24,12 +31,12 @@ export const StyledShopGroup = styled.ul`
 `;
 
 export const StyledShopGroupItem = styled.li`
-  border-bottom: 1px solid;
+  margin-bottom: 40px;
 `;
 
 export const StyledShopItems = styled.ul`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 24px;
   list-style: none;
   margin: 0;
