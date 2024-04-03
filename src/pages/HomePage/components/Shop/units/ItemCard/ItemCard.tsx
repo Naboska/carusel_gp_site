@@ -1,25 +1,40 @@
 import { useMemo } from 'react';
+import { Button, Typography } from 'elui-react';
+
+import { lamaniFormatter } from 'lib/helpers/lamani-formatter';
+
+import { useShopContext } from '../../hooks';
 
 import { TItemCard } from './types.ts';
-import { StyledCardActions } from './styled.ts';
+import { StyledCard, StyledCardActions } from './styled.ts';
 
-export const ItemCard = ({ item, selectedIds, add, remove }: TItemCard) => {
+export const ItemCard = ({ item }: TItemCard) => {
+  const { add, remove, selectedIds } = useShopContext();
+
   const selectedCount = useMemo(() => {
     return selectedIds.filter(ids => ids === item.id).length;
   }, [item.id, selectedIds]);
 
+  const isDisableMinus = !selectedCount;
+
   return (
-    <div>
-      <h3>{item.name}</h3>
-      <img src={import.meta.env.BASE_URL + item.image} width={150} height={150} alt={item.name} />
-      <p>{item.price}</p>
+    <StyledCard>
+      <Typography variant="h6">{item.name}</Typography>
+      <img src={import.meta.env.BASE_URL + item.image} alt={item.name} />
+      <Typography variant="h6">{lamaniFormatter.format(item.price)}</Typography>
       <StyledCardActions>
-        <button disabled={!selectedCount} onClick={() => remove(item.id)}>
+        <Button
+          variant={isDisableMinus ? 'white' : 'primary'}
+          disabled={isDisableMinus}
+          onClick={() => remove(item.id)}
+        >
           -
-        </button>
-        <div>{selectedCount}</div>
-        <button onClick={() => add(item.id)}>+</button>
+        </Button>
+        <Typography typographyStyle={{ minWidth: 40, textAlign: 'center' }}>{selectedCount}</Typography>
+        <Button variant="primary" onClick={() => add(item.id)}>
+          +
+        </Button>
       </StyledCardActions>
-    </div>
+    </StyledCard>
   );
 };
