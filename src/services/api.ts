@@ -22,10 +22,17 @@ export type TShopResponse = {
   groups: TShopGroup[];
 };
 
+console.log(import.meta.env);
+
 export class Api extends HttpClient {
+  constructor() {
+    super();
+    this.publicUrl = import.meta.env.BASE_URL;
+  }
+
   public shop(): Promise<TShopResponse> {
     return this.request<TShopResponse>({
-      path: '/shop.json',
+      path: 'shop.json',
       method: 'GET',
     });
   }

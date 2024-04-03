@@ -11,7 +11,7 @@ export const ItemCard = ({ item, selectedIds, add, remove }: TItemCard) => {
   return (
     <div>
       <h3>{item.name}</h3>
-      <img src={item.image} width={150} height={150} alt={item.name} />
+      <img src={import.meta.env.BASE_URL + item.image} width={150} height={150} alt={item.name} />
       <p>{item.price}</p>
       <StyledCardActions>
         <button disabled={!selectedCount} onClick={() => remove(item.id)}>
