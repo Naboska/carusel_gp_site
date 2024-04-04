@@ -4,11 +4,14 @@ import { useCallback } from 'react';
 import type { TShopGroupItem } from 'services/api';
 
 import { useShopContext } from '../../hooks';
+import { lamaniFormatter } from '../../../../../../lib/helpers/lamani-formatter.ts';
 
-import { StyledActions, StyledTotalItem } from './styled.ts';
+import { StyledActions, StyledItemInfo, StyledItemPrice, StyledTotalItem } from './styled.ts';
 
-export const TotalItem = ({ name, id }: TShopGroupItem) => {
+export const CartItem = ({ name, id, image, price }: TShopGroupItem) => {
   const { selectedIds, add, remove } = useShopContext();
+
+  const count = selectedIds.filter(itemId => itemId === id).length;
 
   const handleAdd = useCallback(() => {
     add(id);
@@ -20,13 +23,21 @@ export const TotalItem = ({ name, id }: TShopGroupItem) => {
 
   return (
     <StyledTotalItem>
-      <Typography>{name}</Typography>
+      <StyledItemInfo>
+        <img src={image} width={40} height={40} alt={name} />
+        <StyledItemPrice>
+          <Typography>{name}</Typography>
+          <Typography variant="caption" color="grey_600">
+            {lamaniFormatter.format(price * count)}
+          </Typography>
+        </StyledItemPrice>
+      </StyledItemInfo>
       <StyledActions>
         <Button variant="white" onClick={handleRemove}>
           -
         </Button>
         <Typography typographyStyle={{ display: 'block', margin: '0 4px', minWidth: 20, textAlign: 'center' }}>
-          {selectedIds.filter(itemId => itemId === id).length}
+          {count}
         </Typography>
         <Button variant="white" onClick={handleAdd}>
           +

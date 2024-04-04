@@ -22,13 +22,14 @@ export const useShopSearch = (shop: TShopGroup[]) => {
   }, [debounceSearch, shop]);
 
   const onSearch = useCallback((event: SyntheticEvent<HTMLInputElement>) => {
-    const value = event.currentTarget.value.trim();
+    const value = event.currentTarget.value.trimStart();
     setSearch(value);
   }, []);
 
   return {
     filteredShop,
     searchValue,
+    debounceSearch,
     onSearch,
   };
 };

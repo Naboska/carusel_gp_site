@@ -4,6 +4,16 @@ import { HEADER_HEIGHT } from './units';
 
 const TOTAL_WIDTH = 400;
 
+export const StyledTabs = styled.div`
+  position: sticky;
+  top: ${HEADER_HEIGHT}px;
+  width: calc(100% - ${TOTAL_WIDTH}px - 1px);
+  padding: 0 24px;
+  z-index: 1;
+  background-color: ${({ theme }) => theme.palette.white};
+  box-shadow: 0 1px 0 0 ${({ theme }) => theme.palette.grey_200};
+`;
+
 export const StyledShop = styled.div`
   position: relative;
   display: flex;
@@ -12,13 +22,16 @@ export const StyledShop = styled.div`
   width: calc(100% - ${TOTAL_WIDTH}px - (24px * 2));
 `;
 
-export const StyledTotalBox = styled.div`
+export const StyledCartBox = styled.div`
   position: fixed;
-  top: ${HEADER_HEIGHT}px;
+  display: flex;
+  flex-direction: column;
+  top: 0;
   right: 0;
+  z-index: 2;
   width: ${TOTAL_WIDTH}px;
-  height: calc(100vh - ${HEADER_HEIGHT}px);
-  padding: 24px 24px 0;
+  height: 100%;
+  max-height: 100vh;
   background-color: ${({ theme }) => theme.palette.white};
   box-shadow: -1px 0 0 0 ${({ theme }) => theme.palette.grey_200};
 `;
