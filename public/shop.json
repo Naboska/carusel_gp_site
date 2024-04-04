@@ -1,11 +1,215 @@
 {
   "groups": [
     {
-      "name": "Покупка оружия",
-      "description": "Дороже чем на кумырне",
+      "name": "Монеты",
+      "description": "Поддержи нас",
       "items": [
         {
           "id": 1,
+          "name": "Черкоин",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_chercoin.png",
+          "more": [],
+          "price": 60000
+        },
+        {
+          "id": 2,
+          "name": "Bitcoin",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_bitcoin.png",
+          "more": [],
+          "price": 60000
+        }
+      ]
+    },
+    {
+      "name": "Услуги группировки",
+      "description": "Внимательно смотрите описание где есть *",
+      "items": [
+        {
+          "id": 3,
+          "name": "Перепайка чипа*",
+          "type": "sell",
+          "description": "Необхомо взять чип и Error ключ-карту",
+          "image": "images/Image_card_error.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 4,
+          "name": "Починка предметов до «нетронутое»",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_workbanch.png",
+          "more": [],
+          "price": 15000
+        },
+        {
+          "id": 5,
+          "name": "Проводник (Позвонить бабушке)*",
+          "type": "sell",
+          "description": "Необходимо иметь оранжевую ключ-карту",
+          "image": "images/Image_conductor.png",
+          "more": [],
+          "price": 0
+        },
+        {
+          "id": 6,
+          "name": "Проводник (CHEL)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_conductor.png",
+          "more": [],
+          "price": 200000
+        },
+        {
+          "id": 7,
+          "name": "Проводник (Лабиринт)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_conductor.png",
+          "more": [],
+          "price": 1000000
+        },
+        {
+          "id": 8,
+          "name": "Проводник (Тисы)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_conductor.png",
+          "more": [],
+          "price": 1500000
+        },
+        {
+          "id": 9,
+          "name": "Проводник (Лопатино-16)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_conductor.png",
+          "more": [],
+          "price": 2000000
+        },
+        {
+          "id": 10,
+          "name": "Проводник (Черный торговец)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_conductor.png",
+          "more": [],
+          "price": 2500000
+        }
+      ]
+    },
+    {
+      "name": "Медицина",
+      "description": "Покупка медицины",
+      "items": [
+        {
+          "id": 11,
+          "name": "Бинт",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_bandage.png",
+          "more": [],
+          "price": 400
+        },
+        {
+          "id": 12,
+          "name": "CMS kit",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_cms.png",
+          "more": [],
+          "price": 30000
+        },
+        {
+          "id": 13,
+          "name": "Адреналин",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_adrenaline.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 14,
+          "name": "Алкогольная настойка",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_alcoholic_tincture.png",
+          "more": [],
+          "price": 5000
+        },
+        {
+          "id": 15,
+          "name": "Водка",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_vodka.png",
+          "more": [],
+          "price": 5000
+        },
+        {
+          "id": 16,
+          "name": "Cannabis (Канабис)",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_cannabis.png",
+          "more": [],
+          "price": 10000
+        }
+      ]
+    },
+    {
+      "name": "Эксклюзив",
+      "description": "Отлично подойдет для похода в КЗ",
+      "items": [
+        {
+          "id": 17,
+          "name": "Benelli M2",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_benelli_m2.png",
+          "more": [],
+          "price": 350000
+        },
+        {
+          "id": 18,
+          "name": "M4 Carbine 300AC",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m4_carbine_300ac.png",
+          "more": [],
+          "price": 450000
+        },
+        {
+          "id": 19,
+          "name": "AWM",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_awm.png",
+          "more": [],
+          "price": 450000
+        },
+        {
+          "id": 20,
+          "name": "AWM Mag. на 15",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_awm_mag_15.png",
+          "more": [],
+          "price": 30000
+        }
+      ]
+    },
+    {
+      "name": "Оружие",
+      "description": "Покупаем дороже чем на Кумырне",
+      "items": [
+        {
+          "id": 21,
           "name": "M98B MC",
           "type": "buy",
           "description": "",
@@ -14,7 +218,7 @@
           "price": 125000
         },
         {
-          "id": 2,
+          "id": 22,
           "name": "M98B Wood",
           "type": "buy",
           "description": "",
@@ -23,7 +227,7 @@
           "price": 125000
         },
         {
-          "id": 3,
+          "id": 23,
           "name": "M98B Snow",
           "type": "buy",
           "description": "",
@@ -32,7 +236,7 @@
           "price": 125000
         },
         {
-          "id": 4,
+          "id": 24,
           "name": "M98B Digi",
           "type": "buy",
           "description": "",
@@ -41,7 +245,7 @@
           "price": 125000
         },
         {
-          "id": 5,
+          "id": 25,
           "name": "M98B Ger",
           "type": "buy",
           "description": "",
@@ -50,7 +254,7 @@
           "price": 125000
         },
         {
-          "id": 6,
+          "id": 26,
           "name": "M98B Atac",
           "type": "buy",
           "description": "",
@@ -59,7 +263,7 @@
           "price": 125000
         },
         {
-          "id": 7,
+          "id": 27,
           "name": "T5000 Snow",
           "type": "buy",
           "description": "",
@@ -68,7 +272,7 @@
           "price": 125000
         },
         {
-          "id": 8,
+          "id": 28,
           "name": "T5000 DKMC",
           "type": "buy",
           "description": "",
@@ -77,7 +281,7 @@
           "price": 125000
         },
         {
-          "id": 9,
+          "id": 29,
           "name": "T5000 Wood",
           "type": "buy",
           "description": "",
@@ -86,7 +290,7 @@
           "price": 125000
         },
         {
-          "id": 10,
+          "id": 30,
           "name": "M24A3",
           "type": "buy",
           "description": "",
@@ -95,7 +299,7 @@
           "price": 125000
         },
         {
-          "id": 11,
+          "id": 31,
           "name": "DVL-10 M2",
           "type": "buy",
           "description": "",
@@ -104,7 +308,7 @@
           "price": 125000
         },
         {
-          "id": 12,
+          "id": 32,
           "name": "Tac-21",
           "type": "buy",
           "description": "",
@@ -115,11 +319,11 @@
       ]
     },
     {
-      "name": "Продажа оружия",
-      "description": "Дешевле чем у Боцмана",
+      "name": "Оружие",
+      "description": "Продаем дешевле чем у Боцмана",
       "items": [
         {
-          "id": 13,
+          "id": 33,
           "name": "Scar BK",
           "type": "sell",
           "description": "",
@@ -128,7 +332,7 @@
           "price": 140000
         },
         {
-          "id": 14,
+          "id": 34,
           "name": "Scar Tan",
           "type": "sell",
           "description": "",
@@ -137,7 +341,7 @@
           "price": 140000
         },
         {
-          "id": 15,
+          "id": 35,
           "name": "Scar DKMC",
           "type": "sell",
           "description": "",
@@ -146,7 +350,7 @@
           "price": 140000
         },
         {
-          "id": 16,
+          "id": 36,
           "name": "Scar Snow",
           "type": "sell",
           "description": "",
@@ -155,7 +359,7 @@
           "price": 140000
         },
         {
-          "id": 17,
+          "id": 37,
           "name": "Scar OD",
           "type": "sell",
           "description": "",
@@ -164,7 +368,7 @@
           "price": 140000
         },
         {
-          "id": 18,
+          "id": 38,
           "name": "Scar Mag. (black)",
           "type": "sell",
           "description": "",
@@ -173,7 +377,7 @@
           "price": 25000
         },
         {
-          "id": 19,
+          "id": 39,
           "name": "Scar Mag. (tan)",
           "type": "sell",
           "description": "",
@@ -182,7 +386,7 @@
           "price": 25000
         },
         {
-          "id": 20,
+          "id": 40,
           "name": "PKP",
           "type": "sell",
           "description": "",
@@ -191,7 +395,7 @@
           "price": 205000
         },
         {
-          "id": 21,
+          "id": 41,
           "name": "PKP Mag.",
           "type": "sell",
           "description": "",
@@ -200,7 +404,7 @@
           "price": 30000
         },
         {
-          "id": 22,
+          "id": 42,
           "name": "P90",
           "type": "sell",
           "description": "",
@@ -209,7 +413,7 @@
           "price": 400000
         },
         {
-          "id": 23,
+          "id": 43,
           "name": "P90 Mag.",
           "type": "sell",
           "description": "",
@@ -218,7 +422,7 @@
           "price": 20000
         },
         {
-          "id": 24,
+          "id": 44,
           "name": "Kriss Vector",
           "type": "sell",
           "description": "",
@@ -227,7 +431,7 @@
           "price": 420000
         },
         {
-          "id": 25,
+          "id": 45,
           "name": "Kriss Vector Mag.",
           "type": "sell",
           "description": "Магазин вмещает 150 патрон.",
@@ -236,7 +440,7 @@
           "price": 20000
         },
         {
-          "id": 26,
+          "id": 46,
           "name": "KAC PDW",
           "type": "sell",
           "description": "",
@@ -245,7 +449,7 @@
           "price": 480000
         },
         {
-          "id": 27,
+          "id": 47,
           "name": "KAC PDW Mag.",
           "type": "sell",
           "description": "Магазин вмещает 30 патрон. Продается в черном цвете. Калибр .300AC",
@@ -254,7 +458,7 @@
           "price": 10000
         },
         {
-          "id": 28,
+          "id": 48,
           "name": "AR15",
           "type": "sell",
           "description": "",
@@ -263,7 +467,7 @@
           "price": 480000
         },
         {
-          "id": 29,
+          "id": 49,
           "name": "300AC Mag. на 40",
           "type": "sell",
           "description": "Магазин вмещает 40 патрон. Продается в черном цвете. Калибр .300AC",
@@ -272,7 +476,7 @@
           "price": 20000
         },
         {
-          "id": 30,
+          "id": 50,
           "name": "300AC Mag. на 40",
           "type": "sell",
           "description": "Магазин вмещает 40 патрон. Продается в песочном цвете. Калибр .300AC",
@@ -281,7 +485,7 @@
           "price": 20000
         },
         {
-          "id": 31,
+          "id": 51,
           "name": "300AC Mag. на 60",
           "type": "sell",
           "description": "Магазин вмещает 60 патрон. Продается в черном цвете. Калибр .300AC",
@@ -290,7 +494,7 @@
           "price": 30000
         },
         {
-          "id": 32,
+          "id": 52,
           "name": "300AC Mag. на 60",
           "type": "sell",
           "description": "Магазин вмещает 60 патрон. Продается в песочном цвете. Калибр .300AC",
@@ -299,7 +503,7 @@
           "price": 30000
         },
         {
-          "id": 33,
+          "id": 53,
           "name": "Gevar (black)",
           "type": "sell",
           "description": "",
@@ -308,7 +512,7 @@
           "price": 520000
         },
         {
-          "id": 34,
+          "id": 54,
           "name": "Gevar (tan)",
           "type": "sell",
           "description": "",
@@ -317,7 +521,7 @@
           "price": 520000
         },
         {
-          "id": 35,
+          "id": 55,
           "name": "Gevar (grey)",
           "type": "sell",
           "description": "",
@@ -326,7 +530,7 @@
           "price": 520000
         },
         {
-          "id": 36,
+          "id": 56,
           "name": "Gevar (green)",
           "type": "sell",
           "description": "",
@@ -335,7 +539,7 @@
           "price": 520000
         },
         {
-          "id": 37,
+          "id": 57,
           "name": "Gevar Mag.",
           "type": "sell",
           "description": "Магазин вмещает 30 патрон",
@@ -346,17 +550,215 @@
       ]
     },
     {
-      "name": "Продажа эксклюзивов",
-      "description": "Для похода в КЗ",
+      "name": "Глушители",
+      "description": "Усиленные",
       "items": [
         {
-          "id": 38,
+          "id": 58,
+          "name": "АК Platform (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_ak_platform_black.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 59,
+          "name": "АК Platform (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_ak_platform_green.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 60,
+          "name": "Universal Cordura (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_cordura_bk.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 61,
+          "name": "Universal Cordura (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_cordura_green.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 62,
+          "name": "Legion AK Platform (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_legion_ak_platform_black.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 63,
+          "name": "Legion AK Platform (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_legion_ak_platform_green.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 64,
+          "name": "Universal Legion (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_legion_bk_sup.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 65,
+          "name": "Universal Legion (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_legion_bk_green.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 66,
+          "name": "Universal Agram",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_agram_sup_bk.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 67,
+          "name": "Universal MPX",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_mpx_sup_bk.png",
+          "more": [],
+          "price": 20000
+        }
+      ]
+    },
+    {
+      "name": "Глушители",
+      "description": "Сверхусиленные",
+      "items": [
+        {
+          "id": 68,
+          "name": "Universal SR25",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_sr25.png",
+          "more": [],
+          "price": 57000
+        },
+        {
+          "id": 69,
+          "name": "Universal 300AC",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_300ac.png",
+          "more": [],
+          "price": 57000
+        },
+        {
+          "id": 70,
+          "name": "Universal ScarH",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_bk_scar_h.png",
+          "more": [],
+          "price": 57000
+        },
+        {
+          "id": 71,
+          "name": "Universal 300AC SQ",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_universal_300ac_sq.png",
+          "more": [],
+          "price": 57000
+        }
+      ]
+    },
+    {
+      "name": "Глушители",
+      "description": "Крупнокалиберные",
+      "items": [
+        {
+          "id": 72,
+          "name": ".338",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_338.png",
+          "more": [],
+          "price": 75000
+        },
+        {
+          "id": 73,
+          "name": ".50 BMG & .408 (BMC)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_50bmg_408_bmc.png",
+          "more": [],
+          "price": 85000
+        },
+        {
+          "id": 74,
+          "name": ".50 BMG & .408 (snow)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_50bmg_408_snow.png",
+          "more": [],
+          "price": 85000
+        },
+        {
+          "id": 75,
+          "name": ".50 BMG & .408 (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_50bmg_408_black.png",
+          "more": [],
+          "price": 85000
+        },
+        {
+          "id": 76,
+          "name": ".50 BMG & .408 (urban)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_50bmg_408_urban.png",
+          "more": [],
+          "price": 85000
+        },
+        {
+          "id": 77,
+          "name": ".50 BMG & .408 (woodland)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_50bmg_408_woodland.png",
+          "more": [],
+          "price": 85000
+        }
+      ]
+    },
+    {
+      "name": "-",
+      "description": "--",
+      "items": [
+        {
+          "id": 99999999,
           "name": "",
           "type": "sell",
           "description": "",
-          "image": "images/Image_Tac-21.png",
+          "image": "images/Image_1.png",
           "more": [],
-          "price": 125000
+          "price": 0
         }
       ]
     }

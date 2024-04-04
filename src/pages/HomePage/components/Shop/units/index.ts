@@ -1,4 +1,4 @@
 export * from './ItemCard';
-export * from './ItemTotal';
+export * from './Cart';
 export * from './Header';
-export * from './TotalItem';
+export * from './CartItem';

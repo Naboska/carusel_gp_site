@@ -18,7 +18,7 @@ export const useSelectedItems = () => {
 
   const remove = useCallback((id: number) => {
     setSelectedIds(prev => {
-      const index = prev.indexOf(id);
+      const index = prev.lastIndexOf(id);
       if (index === -1) return prev;
 
       const next = [...prev];
@@ -28,8 +28,8 @@ export const useSelectedItems = () => {
     });
   }, []);
 
-  const removeAll = useCallback((id: number) => {
-    setSelectedIds(prev => prev.filter(prevId => prevId != id));
+  const removeAll = useCallback(() => {
+    setSelectedIds([]);
   }, []);
 
   return {
