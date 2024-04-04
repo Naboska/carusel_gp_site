@@ -109,7 +109,7 @@
         {
           "id": 11,
           "name": "Бинт",
-          "type": "sell",
+          "type": "buy",
           "description": "",
           "image": "images/Image_bandage.png",
           "more": [],
@@ -118,7 +118,7 @@
         {
           "id": 12,
           "name": "CMS kit",
-          "type": "sell",
+          "type": "buy",
           "description": "",
           "image": "images/Image_cms.png",
           "more": [],
@@ -127,7 +127,7 @@
         {
           "id": 13,
           "name": "Адреналин",
-          "type": "sell",
+          "type": "buy",
           "description": "",
           "image": "images/Image_adrenaline.png",
           "more": [],
@@ -136,7 +136,7 @@
         {
           "id": 14,
           "name": "Алкогольная настойка",
-          "type": "sell",
+          "type": "buy",
           "description": "",
           "image": "images/Image_alcoholic_tincture.png",
           "more": [],
@@ -145,7 +145,7 @@
         {
           "id": 15,
           "name": "Водка",
-          "type": "sell",
+          "type": "buy",
           "description": "",
           "image": "images/Image_vodka.png",
           "more": [],
@@ -154,7 +154,7 @@
         {
           "id": 16,
           "name": "Cannabis (Канабис)",
-          "type": "sell",
+          "type": "buy",
           "description": "",
           "image": "images/Image_cannabis.png",
           "more": [],
