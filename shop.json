@@ -858,12 +858,12 @@
         },
         {
           "id": 89,
-          "name": "Шампиньон",
+          "name": "Рыба ангел",
           "type": "buy",
           "description": "",
-          "image": "images/Image_champignons.png",
+          "image": "images/Image_fish_angel.png",
           "more": [],
-          "price": 75000
+          "price": 5000
         },
         {
           "id": 90,
