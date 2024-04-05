@@ -1266,6 +1266,249 @@
           "image": "images/Image_hamster_200.png",
           "more": [],
           "price": 2200000
+        },
+        {
+          "id": 135,
+          "name": "Ontario SP 10 Bowie (режик)",
+          "type": "sell",
+          "description": "Неубиваемый. Режет в 2 раза быстрее. Быстрее чем Tristan за голоса.",
+          "image": "images/Image_ontario_sp_10_bowie_aka_rejik.png",
+          "more": [],
+          "price": 1700000
+        },
+        {
+          "id": 136,
+          "name": "Kivaari (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_kivaari_black.png",
+          "more": [],
+          "price": 750000
+        },
+        {
+          "id": 137,
+          "name": "Kivaari (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_kivaari_tan.png",
+          "more": [],
+          "price": 750000
+        },
+        {
+          "id": 138,
+          "name": "Kivaari (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_kivaari_grey.png",
+          "more": [],
+          "price": 750000
+        },
+        {
+          "id": 139,
+          "name": "Kivaari (snow)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_kivaari_snow.png",
+          "more": [],
+          "price": 750000
+        },
+        {
+          "id": 140,
+          "name": "Kivaari Mag.",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_kivaari_mag.png",
+          "more": [],
+          "price": 75000
+        },
+        {
+          "id": 141,
+          "name": "M200 CheyTac (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m200_cheytac_black.png",
+          "more": [],
+          "price": 850000
+        },
+        {
+          "id": 142,
+          "name": "M200 CheyTac (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m200_cheytac_green.png",
+          "more": [],
+          "price": 850000
+        },
+        {
+          "id": 143,
+          "name": "M200 CheyTac (snow)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m200_cheytac_snow.png",
+          "more": [],
+          "price": 850000
+        },
+        {
+          "id": 144,
+          "name": "M200 CheyTac (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m200_cheytac_tan.png",
+          "more": [],
+          "price": 850000
+        },
+        {
+          "id": 145,
+          "name": "CheyTac Mag. на 7",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_cheytac_mag_7.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 146,
+          "name": "CheyTac M300 (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m300_cheytac_black.png",
+          "more": [],
+          "price": 900000
+        },
+        {
+          "id": 147,
+          "name": "CheyTac M300 (desert)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m300_cheytac_desert.png",
+          "more": [],
+          "price": 900000
+        },
+        {
+          "id": 148,
+          "name": "CheyTac M300 (forest)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m300_cheytac_forest.png",
+          "more": [],
+          "price": 900000
+        },
+        {
+          "id": 149,
+          "name": "CheyTac Mag. на 15",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_cheytac_mag_15.png",
+          "more": [],
+          "price": 50000
+        },
+        {
+          "id": 150,
+          "name": "SN Auto Shotgun",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_sn_auto_shotgun.png",
+          "more": [],
+          "price": 1900000
+        },
+        {
+          "id": 151,
+          "name": "SN Auto Shotgun Mag. на 30",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_sn_auto_shotgun_mag_30.png",
+          "more": [],
+          "price": 140000
+        },
+        {
+          "id": 152,
+          "name": "Кастомный АКСУ (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_custom_aksu_black.png",
+          "more": [],
+          "price": 2500000
+        },
+        {
+          "id": 153,
+          "name": "Кастомный АКСУ (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_custom_aksu_tan.png",
+          "more": [],
+          "price": 2500000
+        },
+        {
+          "id": 154,
+          "name": "АКСУ Mag. на 120",
+          "type": "sell",
+          "description": "",
+          "image": "images/123.png",
+          "more": [],
+          "price": 200000
+        },
+        {
+          "id": 155,
+          "name": "ВСС",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_vss.png",
+          "more": [],
+          "price": 0
+        },
+        {
+          "id": 156,
+          "name": "ВСС Mag. на 21",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_vss_mag_21.png",
+          "more": [],
+          "price": 0
+        },
+        {
+          "id": 157,
+          "name": "Barret M82",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m82_barret.png",
+          "more": [],
+          "price": 5500000
+        },
+        {
+          "id": 158,
+          "name": "Barret M82 Mag.",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_m82_barret_mag.png",
+          "more": [],
+          "price": 250000
+        },
+        {
+          "id": 159,
+          "name": "GM6 Lynx",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_gm6_lynx.png",
+          "more": [],
+          "price": 5500000
+        },
+        {
+          "id": 160,
+          "name": "GM6 Lynx Mag. на 13",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_gm6_lynx_mag_13.png",
+          "more": [],
+          "price": 250000
+        },
+        {
+          "id": 161,
+          "name": "AS50 Mag. на 20",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_as50_mag_20.png",
+          "more": [],
+          "price": 250000
         }
       ]
     }
