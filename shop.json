@@ -50,7 +50,7 @@
           "id": 5,
           "name": "Проводник (Позвонить бабушке)*",
           "type": "sell",
-          "description": "Необходимо иметь оранжевую ключ-карту",
+          "description": "Необходимо иметь оранжевую ключ-карту, и начальную репутацию.",
           "image": "images/Image_conductor.png",
           "more": [],
           "price": 0
@@ -748,17 +748,524 @@
       ]
     },
     {
-      "name": "-",
-      "description": "--",
+      "name": "Химическая защита",
+      "description": "Продажа хим. защиты, она необходима для похода в КЗ",
       "items": [
         {
-          "id": 99999999,
-          "name": "",
+          "id": 78,
+          "name": "Хим. костюм",
+          "type": "sell",
+          "description": "Желтый. Без противогаза. Отлично подойдет на начальной стадии",
+          "image": "images/Image_nbc_yellow_full.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 79,
+          "name": "Противогаз",
           "type": "sell",
           "description": "",
-          "image": "images/Image_1.png",
+          "image": "images/Image_gas_mask.png",
           "more": [],
-          "price": 0
+          "price": 10000
+        },
+        {
+          "id": 80,
+          "name": "Фильтр противогаза (Поношено)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_gas_mask_filter.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 81,
+          "name": "Фильтр противогаза (Повреждено)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_gas_mask_filter.png",
+          "more": [],
+          "price": 5000
+        },
+        {
+          "id": 82,
+          "name": "Капюшон хим. костюма (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_nbc_grey_hood.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 83,
+          "name": "Куртка хим. костюма (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_nbc_grey_jacket.png",
+          "more": [],
+          "price": 500000
+        },
+        {
+          "id": 84,
+          "name": "Рукавицы хим. костюма (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_nbc_grey_gloves.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 85,
+          "name": "Штаны хим. костюма (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_nbc_grey_legs.png",
+          "more": [],
+          "price": 50000
+        },
+        {
+          "id": 86,
+          "name": "Ботинки хим. костюма (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_nbc_grey_boots.png",
+          "more": [],
+          "price": 10000
+        }
+      ]
+    },
+    {
+      "name": "Полезное",
+      "description": "Различные товары не вошедшие в другие категории",
+      "items": [
+        {
+          "id": 87,
+          "name": "Кофе",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_coffee.png",
+          "more": [],
+          "price": 75000
+        },
+        {
+          "id": 88,
+          "name": "Шампиньон",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_champignons.png",
+          "more": [],
+          "price": 5000
+        },
+        {
+          "id": 89,
+          "name": "Шампиньон",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_champignons.png",
+          "more": [],
+          "price": 75000
+        },
+        {
+          "id": 90,
+          "name": "Белая краска",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_white_paint.png",
+          "more": [],
+          "price": 100000
+        },
+        {
+          "id": 91,
+          "name": "Розовая краска",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_pink_paint.png",
+          "more": [],
+          "price": 100000
+        },
+        {
+          "id": 92,
+          "name": "Белый мишка",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_bear_white.png",
+          "more": [],
+          "price": 50000
+        },
+        {
+          "id": 93,
+          "name": "Черный мишка",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_bear_black.png",
+          "more": [],
+          "price": 30000
+        },
+        {
+          "id": 94,
+          "name": "Розовый мишка",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_bear_pink.png",
+          "more": [],
+          "price": 20000
+        },
+        {
+          "id": 95,
+          "name": "Бежевый мишка",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_bear_beige.png",
+          "more": [],
+          "price": 50000
+        },
+        {
+          "id": 96,
+          "name": "Бронежелет",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_plate_carrier.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 97,
+          "name": "Шлемофон",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_tanker_helmet.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 98,
+          "name": "Кольчужный капюшон",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_chainmail_coif.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 99,
+          "name": "Кольчужные шоссы",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_chainmail_leggings.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 100,
+          "name": "Хреновата",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_hrenovata.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 101,
+          "name": "Мегафон",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_megaphone.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 102,
+          "name": "Полевая радиостанция",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_field_transceiver.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 103,
+          "name": "Дальнометр",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_rangefinder.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 104,
+          "name": "Рация",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_transmitter.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 105,
+          "name": "Материнская плата",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_motherboard.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 107,
+          "name": "Жесткий диск",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_hdd.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 108,
+          "name": "Микросхема",
+          "type": "buy",
+          "description": "",
+          "image": "images/Image_chip.png",
+          "more": [],
+          "price": 10000
+        },
+        {
+          "id": 109,
+          "name": "Непонятный гриб",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_incomprehensible_mushroom.png",
+          "more": [],
+          "price": 2000000
+        },
+        {
+          "id": 110,
+          "name": "Документы 1 ур.",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_doc1.png",
+          "more": [],
+          "price": 300000
+        },
+        {
+          "id": 111,
+          "name": "Документы 2 ур.",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_doc2.png",
+          "more": [],
+          "price": 800000
+        },
+        {
+          "id": 112,
+          "name": "Документы 3 ур.",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_doc3.png",
+          "more": [],
+          "price": 1200000
+        },
+        {
+          "id": 113,
+          "name": "Шкура медведя (бурый)",
+          "type": "sell",
+          "description": "Цена за штуку, может быть поврежденной",
+          "image": "images/Image_bear_pelt.png",
+          "more": [],
+          "price": 1500000
+        },
+        {
+          "id": 114,
+          "name": "Желтая краска",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_yellow_paint.png",
+          "more": [],
+          "price": 100000
+        },
+        {
+          "id": 115,
+          "name": "Красная краска",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_red_paint.png",
+          "more": [],
+          "price": 100000
+        },
+        {
+          "id": 116,
+          "name": "Оранжевая краска",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_orange_paint.png",
+          "more": [],
+          "price": 80000
+        },
+        {
+          "id": 117,
+          "name": "Зеленая краска",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_green_paint.png",
+          "more": [],
+          "price": 100000
+        },
+        {
+          "id": 118,
+          "name": "Синяя краска",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_blue_paint.png",
+          "more": [],
+          "price": 120000
+        },
+        {
+          "id": 119,
+          "name": "Черная краска",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_black_paint.png",
+          "more": [],
+          "price": 100000
+        }
+      ]
+    },
+    {
+      "name": "Товары с черного торговца",
+      "description": "Доставка товаров с черного торговца. Стоимость составляет от 150 000 до 2 000 000 ламани, зависит от количество заказанных товаров. Для игроков с высокой репутацией у группировки предоставляем высокую скидку.",
+      "items": [
+        {
+          "id": 120,
+          "name": "Тяжелая ременная система (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_heavy_belt_system_tan.png",
+          "more": [],
+          "price": 500000
+        },
+        {
+          "id": 121,
+          "name": "Тяжелая ременная система (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_heavy_belt_system_black.png",
+          "more": [],
+          "price": 500000
+        },
+        {
+          "id": 122,
+          "name": "Тяжелая ременная система (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_heavy_belt_system_green.png",
+          "more": [],
+          "price": 500000
+        },
+        {
+          "id": 123,
+          "name": "Поясная сумка (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_waist_bag_tan.png",
+          "more": [],
+          "price": 600000
+        },
+        {
+          "id": 124,
+          "name": "Поясная сумка (catsiaga)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_waist_bag_catsiaga.png",
+          "more": [],
+          "price": 654321
+        },
+        {
+          "id": 125,
+          "name": "Большой зеленый ящик",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_big_box_green.png",
+          "more": [],
+          "price": 400000
+        },
+        {
+          "id": 126,
+          "name": "Большой черный ящик",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_big_box_black.png",
+          "more": [],
+          "price": 400000
+        },
+        {
+          "id": 127,
+          "name": "Большой серый ящик",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_big_box_grey.png",
+          "more": [],
+          "price": 400000
+        },
+        {
+          "id": 128,
+          "name": "Контейнер черный",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_container_black.png",
+          "more": [],
+          "price": 150000
+        },
+        {
+          "id": 129,
+          "name": "Сумка черная",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_bag_black.png",
+          "more": [],
+          "price": 250000
+        },
+        {
+          "id": 130,
+          "name": "Контейнер черный II",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_container_2_black.png",
+          "more": [],
+          "price": 250000
+        },
+        {
+          "id": 131,
+          "name": "Кофе машина",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_coffee_machine.png",
+          "more": [],
+          "price": 1000000
+        },
+        {
+          "id": 132,
+          "name": "Ремонтный верстак",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_repair_workbench.png",
+          "more": [],
+          "price": 1000000
+        },
+        {
+          "id": 133,
+          "name": "Хомяк на 100",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_hamster_100.png",
+          "more": [],
+          "price": 1200000
+        },
+        {
+          "id": 134,
+          "name": "Хомяк на 200",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_hamster_200.png",
+          "more": [],
+          "price": 2200000
         }
       ]
     }
