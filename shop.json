@@ -1454,7 +1454,7 @@
           "description": "",
           "image": "images/Image_vss.png",
           "more": [],
-          "price": 0
+          "price": 4500000
         },
         {
           "id": 156,
@@ -1463,7 +1463,7 @@
           "description": "",
           "image": "images/Image_vss_mag_21.png",
           "more": [],
-          "price": 0
+          "price": 250000
         },
         {
           "id": 157,
@@ -1509,6 +1509,303 @@
           "image": "images/Image_as50_mag_20.png",
           "more": [],
           "price": 250000
+        },
+        {
+          "id": 162,
+          "name": "Камаз 4310 КУНГ (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 3500000
+        },
+        {
+          "id": 163,
+          "name": "Камаз 4310 КУНГ (blue)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 3500000
+        },
+        {
+          "id": 164,
+          "name": "Камаз 4310 КУНГ (orange)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 3500000
+        },
+        {
+          "id": 165,
+          "name": "Камаз 4310 (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 4000000
+        },
+        {
+          "id": 166,
+          "name": "Камаз 4310 (blue)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 4000000
+        },
+        {
+          "id": 167,
+          "name": "Камаз 4310 (orange)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 4000000
+        },
+        {
+          "id": 168,
+          "name": "BMW 525i E34 (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 5000000
+        },
+        {
+          "id": 169,
+          "name": "BMW 525i E34 (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 5000000
+        },
+        {
+          "id": 170,
+          "name": "BMW 525i E34 (red)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 5200000
+        },
+        {
+          "id": 171,
+          "name": "BMW 525i E34 (purple)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 5500000
+        },
+        {
+          "id": 172,
+          "name": "БТР-80 (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 7000000
+        },
+        {
+          "id": 173,
+          "name": "БТР-80 (snow)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 7000000
+        },
+        {
+          "id": 174,
+          "name": "БТР-80 (forest)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 7000000
+        },
+        {
+          "id": 175,
+          "name": "БТР-80 (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 7000000
+        },
+        {
+          "id": 176,
+          "name": "Сибирь (forest)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 177,
+          "name": "Сибирь (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 178,
+          "name": "Сибирь (yellow)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 179,
+          "name": "Сибирь (red)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 180,
+          "name": "Сибирь (snow-forest)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 181,
+          "name": "Сибирь (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 182,
+          "name": "Сибирь (snow-city)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 8000000
+        },
+        {
+          "id": 183,
+          "name": "Камаз Тайфун",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 10000000
+        },
+        {
+          "id": 184,
+          "name": "Oshkosh (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 10000000
+        },
+        {
+          "id": 185,
+          "name": "Oshkosh (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 10000000
+        },
+        {
+          "id": 186,
+          "name": "Oshkosh (grey)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 10000000
+        },
+        {
+          "id": 187,
+          "name": "Oshkosh (white)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 10000000
+        },
+        {
+          "id": 188,
+          "name": "Defender Expedition (yellow)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
+        },
+        {
+          "id": 189,
+          "name": "Defender Expedition (green)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
+        },
+        {
+          "id": 190,
+          "name": "Defender Expedition (red)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
+        },
+        {
+          "id": 191,
+          "name": "Defender Expedition (white)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
+        },
+        {
+          "id": 192,
+          "name": "Defender Expedition (forest)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
+        },
+        {
+          "id": 193,
+          "name": "Defender Expedition (tan)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
+        },
+        {
+          "id": 194,
+          "name": "Defender Expedition (black)",
+          "type": "sell",
+          "description": "",
+          "image": "images/Image_1.png",
+          "more": [],
+          "price": 11000000
         }
       ]
     }
