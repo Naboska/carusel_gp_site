@@ -32,7 +32,7 @@
           "id": 3,
           "name": "Перепайка чипа*",
           "type": "sell",
-          "description": "Необхомо взять чип и Error ключ-карту",
+          "description": "Необходимо взять чип и Error ключ-карту",
           "image": "images/Image_card_error.png",
           "more": [],
           "price": 10000
