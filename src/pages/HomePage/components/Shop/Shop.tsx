@@ -54,10 +54,12 @@ export const Shop = ({ groups }: TShop) => {
         <StyledShopGroup>
           {activeFilteredShop.map(({ name, description, items }, shopIndex) => (
             <StyledShopGroupItem key={shopIndex}>
-              <Typography variant="h4" typographyStyle={{ display: 'block', paddingBottom: 8 }}>
+              <Typography variant="h4" typographyStyle={{ display: 'block', maxWidth: 500, paddingBottom: 8 }}>
                 {name}
               </Typography>
-              <Typography typographyStyle={{ display: 'block', marginBottom: 24 }}>{description}</Typography>
+              <Typography color="grey_800" typographyStyle={{ display: 'block', maxWidth: 1100, marginBottom: 24 }}>
+                {description}
+              </Typography>
               <StyledShopItems>
                 {items.map(item => (
                   <ItemCard key={item.id} {...{ item }} />

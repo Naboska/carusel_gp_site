@@ -116,7 +116,7 @@ export const Cart = ({ groups }: TItemTotal) => {
       {sum !== 0 && (
         <StyledFooterBox>
           <StyledFooter>
-            <Typography variant="st1">{sum < 0 ? `Мы заплатим:` : `Итого:`}</Typography>
+            <Typography variant="st1">{sum < 0 ? `Мы заплатим:` : `Ты заплатишь:`}</Typography>
             <Typography variant="st1">{formattedSum}</Typography>
           </StyledFooter>
           <CopyButton />
