@@ -2,11 +2,11 @@ import { Button, Typography } from 'elui-react';
 import { useCallback } from 'react';
 
 import type { TShopGroupItem } from 'services/api';
+import { lamaniFormatter } from 'lib/helpers/lamani-formatter';
 
 import { useShopContext } from '../../hooks';
-import { lamaniFormatter } from '../../../../../../lib/helpers/lamani-formatter.ts';
 
-import { StyledActions, StyledItemInfo, StyledItemPrice, StyledTotalItem } from './styled.ts';
+import { StyledActions, StyledItemInfo, StyledItemPrice, StyledTotalItem } from './styled';
 
 export const CartItem = ({ name, id, image, price }: TShopGroupItem) => {
   const { selectedIds, add, remove } = useShopContext();
@@ -24,7 +24,7 @@ export const CartItem = ({ name, id, image, price }: TShopGroupItem) => {
   return (
     <StyledTotalItem>
       <StyledItemInfo>
-        <img src={image} width={40} height={40} alt={name} />
+        <img src={import.meta.env.BASE_URL + 'images/' + image} width={40} height={40} alt={name} />
         <StyledItemPrice>
           <Typography>{name}</Typography>
           <Typography variant="caption" color="grey_600">

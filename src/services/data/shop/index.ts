@@ -1,1 +1,2 @@
-export * from './use-shop-query.ts';
+export * from './use-shop-groups-query';
+export * from './use-shop-items-query';

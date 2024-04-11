@@ -5,8 +5,8 @@ import { lamaniFormatter } from 'lib/helpers/lamani-formatter';
 
 import { useShopContext } from '../../hooks';
 
-import { TItemCard } from './types.ts';
-import { StyledCard, StyledCardActions } from './styled.ts';
+import type { TItemCard } from './types';
+import { StyledCard, StyledCardActions } from './styled';
 
 export const ItemCard = ({ item }: TItemCard) => {
   const { add, remove, selectedIds } = useShopContext();
@@ -30,7 +30,7 @@ export const ItemCard = ({ item }: TItemCard) => {
           </>
         )}
       </Typography>
-      <img src={import.meta.env.BASE_URL + item.image} alt={item.name} />
+      <img src={import.meta.env.BASE_URL + 'images/' + item.image} alt={item.name} />
       <Typography variant="h6">{lamaniFormatter.format(item.price)}</Typography>
       {!selectedCount ? (
         <Button variant="white" onClick={handleAdd} buttonStyle={{ marginTop: 24 }}>

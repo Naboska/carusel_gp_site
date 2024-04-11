@@ -1,22 +1,26 @@
-import { Box, Typography } from 'elui-react';
+import { Box } from 'elui-react';
 
-import { useShopQuery } from 'services';
+import { useShopGroupsQuery, useShopItemsQuery } from 'services';
 
-import { Shop } from './components';
+import { LoaderText, Shop } from './components';
 
 export const HomePage = () => {
-  const { shop, isFetching, isError } = useShopQuery();
+  const { isFetching: isGroupsLoading, isError: isGroupsError } = useShopGroupsQuery();
+  const { isFetching: isItemsLoading, isError: isItemsError } = useShopItemsQuery();
+
+  const isFetching = isGroupsLoading || isItemsLoading;
+  const isError = isGroupsError || isItemsError;
 
   if (isFetching)
     return (
       <Box
         boxStyle={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100vw', height: '100vh' }}
       >
-        <Typography variant="h4">Звоню эксидам, сейчас подойдут...</Typography>
+        <LoaderText />
       </Box>
     );
 
   if (isError) return <div>gg wp, refresh</div>;
 
-  return <Shop groups={shop} />;
+  return <Shop />;
 };

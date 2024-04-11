@@ -1,60 +1,41 @@
 import { useMemo } from 'react';
 import { useUpdateEffect } from 'react-use';
-import { Button, Chip, Empty, Typography } from 'elui-react';
+import { Button, Empty, Typography } from 'elui-react';
 
-import type { TShopGroupItem } from 'services/api';
 import { lamaniFormatter } from 'lib/helpers/lamani-formatter';
+import { useShopItemsQuery } from 'services';
 
 import { useShopContext } from '../../hooks';
 import { CartItem } from '../CartItem';
 import { CopyButton } from '../CopyButton';
 
-import type { TItemTotal } from './types';
 import { StyledFooter, StyledFooterBox, StyledHeader, StyledItems } from './styled';
 
-export const Cart = ({ groups }: TItemTotal) => {
-  const { selectedIds, add, removeAll } = useShopContext();
-
-  const groupItems = useMemo(() => {
-    return groups.map(e => e.items).flat(1);
-  }, [groups]);
+export const Cart = () => {
+  const { selectedIds, removeAll } = useShopContext();
+  const { items } = useShopItemsQuery();
 
   const selectedItems = useMemo(() => {
-    const items: TShopGroupItem[] = [];
-
-    for (const id of new Set(selectedIds).keys()) {
-      const item = groupItems.find(item => item.id === id)!;
-      items.push(item);
-    }
-
-    return items;
-  }, [selectedIds, groupItems]);
+    return [...new Set(selectedIds).keys()];
+  }, [selectedIds]);
 
   const sellItems = useMemo(() => {
-    return selectedItems.filter(item => item.type === 'sell');
-  }, [selectedItems]);
+    return items.filter(item => selectedItems.includes(item.id) && item.type === 'sell');
+  }, [items, selectedItems]);
 
   const buyItems = useMemo(() => {
-    return selectedItems.filter(item => item.type === 'buy');
-  }, [selectedItems]);
-
-  const maybeSell = useMemo(() => {
-    const items = new Set<number>();
-
-    for (const selectedItem of selectedItems) {
-      for (const id of selectedItem.more) if (!selectedIds.includes(id)) items.add(id);
-    }
-
-    return [...items.keys()].map(id => groupItems.find(item => item.id === id)!);
-  }, [groupItems, selectedIds, selectedItems]);
+    return items.filter(item => selectedItems.includes(item.id) && item.type === 'buy');
+  }, [items, selectedItems]);
 
   const sum = useMemo(() => {
+    const items = [...sellItems, ...buyItems];
+
     return selectedIds.reduce((sum, id) => {
-      const item = selectedItems.find(item => item.id === id)!;
+      const item = items.find(item => item.id === id)!;
 
       return item.type === 'sell' ? sum + item.price : sum - item.price;
     }, 0);
-  }, [selectedIds, selectedItems]);
+  }, [buyItems, selectedIds, sellItems]);
 
   useUpdateEffect(() => {
     window.location.hash = selectedIds.length ? `#${btoa(selectedIds.join(','))}` : '#-';
@@ -71,22 +52,6 @@ export const Cart = ({ groups }: TItemTotal) => {
         </Button>
       </StyledHeader>
       <StyledItems>
-        {!!maybeSell.length && (
-          <div style={{ position: 'sticky', top: 0 }}>
-            <Typography>С этим покупают:</Typography>
-            {maybeSell.map(({ id, image, name }) => (
-              <Chip
-                key={id}
-                variant="default"
-                value={id}
-                leftSlot={<img src={image} width={20} height={20} alt={name} />}
-                onChip={e => add(e.value!)}
-              >
-                {name}
-              </Chip>
-            ))}
-          </div>
-        )}
         {!selectedItems.length && (
           <Empty
             image="https://yastatic.net/s3/lavka-web/public/assets/images/emptyCart@2x.png"
