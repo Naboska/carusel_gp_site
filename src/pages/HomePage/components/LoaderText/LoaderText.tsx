@@ -37,7 +37,7 @@ const texts = [
 ];
 
 export const LoaderText = () => {
-  const [text, setText] = useState(texts[Math.floor(Math.random() * texts.length)]);
+  const [text, setText] = useState(texts[0]);
   const isMounted = useMountedState();
 
   useEffect(() => {
@@ -47,7 +47,7 @@ export const LoaderText = () => {
       const index = Math.floor(Math.random() * texts.length);
       if (isMounted()) setText(texts[index]);
       else if (timer) clearInterval(timer);
-    }, 1000);
+    }, 2300);
 
     return () => {
       if (!timer) return;
