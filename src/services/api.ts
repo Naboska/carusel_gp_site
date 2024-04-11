@@ -4,54 +4,40 @@ export type TShopItemType = 'buy' | 'sell';
 
 export type TShopGroupItem = {
   id: number;
-  name: string;
   group: number;
-  type: TShopItemType;
-  description?: string;
-  image: string;
-  more?: number[];
-  price: number;
   isShow: boolean;
+  name: string;
+  type: TShopItemType;
+  price: number;
+  image: string;
+  more: string;
+  description: string;
 };
 
 export type TShopGroup = {
   id: number;
   name: string;
-  description?: string;
+  description: string;
 };
 
 export class Api extends HttpClient {
   constructor() {
     super();
-    this.publicUrl = 'https://sheet.best/api/sheets/2eb08067-a222-4dd2-819c-9e9169d86f66';
+    this.publicUrl = 'https://script.googleusercontent.com/macros/echo?user_content_key=';
   }
 
   public async groups(): Promise<TShopGroup[]> {
-    const response = await this.request<TShopGroup[]>({
-      path: '/tabs/groups',
+    return this.request<TShopGroup[]>({
+      path: `HLu4I4VDAz7H-Xoj7NB6p3UbmjkC54mXhudJbJOGS4KXheTRD4XMme6LoYg5Ll226eCimpfY032Yjf4B5fRZf5cpOxFj0l-Vm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnN6YiIuVeGMY34sfAlt1HsKz2q7MWnlwfaawxMuaL_FqQdBiMzDyRX2ixDFywk9psybw2tGbChd9tOymKp9JFyWucyOD0kGKvw&lib=MQCmmcywCJXhBMsMuMX5scPYlDj38wupO`,
       method: 'GET',
     });
-
-    return response.map(group => ({
-      ...group,
-      id: Number(group.id),
-    }));
   }
 
   public async items(): Promise<TShopGroupItem[]> {
-    const response = await this.request<TShopGroupItem[]>({
-      path: '/tabs/items',
+    return this.request<TShopGroupItem[]>({
+      path: `ZtZ6T_6luLHI9_NqkC-3KG-2uaglWmMiph_8grbbytqGNJLKDTM5ACTuDGEEC9hSp4AbpsDzOSD3hWTYspoV8FEsH8IEzmyWm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGvZegsOf76SnTZ66G7s9hIKb8YcCBJXfjzzvvLpLqMx-NXdxgHXYXAnvDKWpnA0LuhITDg4_fgI98HUV2ScVtUws6A1-o5N5g&lib=MQCmmcywCJXhBMsMuMX5scPYlDj38wupO`,
       method: 'GET',
     });
-
-    return response.map(item => ({
-      ...item,
-      id: Number(item.id),
-      price: Number(item.price),
-      group: Number(item.group),
-      more: (item.more as unknown as string)?.split(',').map(Number),
-      isShow: (item.isShow as unknown as 'TRUE' | 'FALSE') === 'TRUE',
-    }));
   }
 }
 
