@@ -1,9 +1,7 @@
-import type { TShopGroup } from 'services/api';
+import type { TShopGroup, TShopGroupItem } from 'services/api';
 
-export type TShopTabName = 'sell' | 'buy';
-
-export type TShop = {
-  groups: TShopGroup[];
+export type TGroup = TShopGroup & {
+  items: TShopGroupItem[];
 };
 
 export type TShopContext = {
