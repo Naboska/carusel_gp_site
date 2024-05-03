@@ -15,7 +15,7 @@ export const Header = ({ searchValue, onSearch }: THeader) => {
       <Input
         leftSlot={<Icon.Search />}
         placeholder="Поиск по магазину"
-        boxStyle={{ maxWidth: 592, paddingBottom: 0 }}
+        boxStyle={{ maxWidth: 300, paddingBottom: 0 }}
         onChange={onSearch}
         value={searchValue}
       />

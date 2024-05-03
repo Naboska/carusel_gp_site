@@ -30,7 +30,7 @@ export const ItemCard = ({ item }: TItemCard) => {
           </>
         )}
       </Typography>
-      <img src={import.meta.env.BASE_URL + 'images/' + item.image} alt={item.name} />
+      <img src={item.image} alt={item.name} />
       <Typography variant="h6">{lamaniFormatter.format(item.price)}</Typography>
       {!selectedCount ? (
         <Button variant="white" onClick={handleAdd} buttonStyle={{ marginTop: 24 }}>

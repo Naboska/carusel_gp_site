@@ -10,9 +10,5 @@ export const CopyButton = () => {
     setTimeout(() => setIsLinkSave(false), 500);
   }, []);
 
-  return (
-    <Button onClick={onSave} buttonStyle={{ margin: '0 24px 24px' }}>
-      {isLinkSave ? 'Ссылка скопирована' : 'Скопировать ссылку на заказ'}
-    </Button>
-  );
+  return <Button onClick={onSave}>{isLinkSave ? 'Ссылка скопирована' : 'Скопировать ссылку на заказ'}</Button>;
 };
