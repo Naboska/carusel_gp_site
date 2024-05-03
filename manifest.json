@@ -7,9 +7,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "natural",
-  "lang": "fa",
+  "lang": "ru",
   "dir": "rtl",
-  "start_url": "/?application=true",
   "icons": [
     {
       "src": "https://naboska.github.io/carusel_gp_site/logo.png",
