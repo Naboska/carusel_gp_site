@@ -11,12 +11,12 @@
   "dir": "rtl",
   "icons": [
     {
-      "src": "https://naboska.github.io/carusel_gp_site/logo.png",
+      "src": "https://naboska.github.io/carusel_gp_site/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://naboska.github.io/carusel_gp_site/logo.png",
+      "src": "https://naboska.github.io/carusel_gp_site/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
