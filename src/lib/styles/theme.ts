@@ -2,6 +2,12 @@ import { theme as baseTheme } from 'elui-react';
 
 export const theme = {
   ...baseTheme,
+  media: {
+    desktop: '1824px',
+    laptop: '1440px',
+    tablet: '1024px',
+    mobile: '375px',
+  },
   palette: {
     ...baseTheme.palette,
     primary_50: '#f0fdf4',

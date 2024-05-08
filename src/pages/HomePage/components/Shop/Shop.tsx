@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Tabs, Typography } from 'elui-react';
+import { useCallback, useMemo, useState } from 'react';
+import { Tabs, Typography, useMediaContext } from 'elui-react';
 import { useFirstMountState } from 'react-use/esm/useFirstMountState';
 
 import type { TShopItemType } from 'services/api';
@@ -7,10 +7,11 @@ import { useShopGroupsQuery } from 'services';
 
 import { TGroup, TShopContext } from './types';
 import { ShopProvider, useSelectedItems, useShopSearch } from './hooks';
-import { Cart, Header, ItemCard } from './units';
+import { Cart, Header, ItemCard, MobileCart } from './units';
 import { StyledCartBox, StyledShop, StyledShopGroup, StyledShopGroupItem, StyledShopItems, StyledTabs } from './styled';
 
 export const Shop = () => {
+  const { isMobile } = useMediaContext();
   const [activeTab, setActiveTab] = useState<TShopItemType>('buy');
   const isFirstMount = useFirstMountState();
   const { searchValue, debounceSearch, filteredShop, onSearch } = useShopSearch();
@@ -37,6 +38,11 @@ export const Shop = () => {
     }, []);
   }, [activeFilteredItems, groups]);
 
+  const onChangeTab = useCallback((tab: TShopItemType) => {
+    setActiveTab(tab);
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <ShopProvider value={ctx}>
       <Header onSearch={onSearch} searchValue={searchValue} />
@@ -45,7 +51,7 @@ export const Shop = () => {
           <Tabs<TShopItemType>
             isScrollable={false}
             activeTab={activeTab}
-            onTabChange={setActiveTab}
+            onTabChange={onChangeTab}
             activeLineStyle={isFirstMount ? undefined : { transitionDuration: '.3s!important' }}
           >
             <Tabs.Tab<TShopItemType> value="buy">Продать</Tabs.Tab>
@@ -75,9 +81,13 @@ export const Shop = () => {
           ))}
         </StyledShopGroup>
       </StyledShop>
-      <StyledCartBox>
-        <Cart />
-      </StyledCartBox>
+      {isMobile ? (
+        <MobileCart />
+      ) : (
+        <StyledCartBox>
+          <Cart />
+        </StyledCartBox>
+      )}
     </ShopProvider>
   );
 };

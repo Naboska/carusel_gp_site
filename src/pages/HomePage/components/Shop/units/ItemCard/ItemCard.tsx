@@ -6,7 +6,7 @@ import { lamaniFormatter } from 'lib/helpers/lamani-formatter';
 import { useShopContext } from '../../hooks';
 
 import type { TItemCard } from './types';
-import { StyledCard, StyledCardActions } from './styled';
+import { StyledAddToCartButton, StyledCard, StyledCardActions, StyledCardTypography, StyledTitle } from './styled';
 
 export const ItemCard = ({ item }: TItemCard) => {
   const { add, remove, selectedIds } = useShopContext();
@@ -19,7 +19,7 @@ export const ItemCard = ({ item }: TItemCard) => {
 
   return (
     <StyledCard>
-      <Typography variant="h6" typographyStyle={{ display: 'block', textAlign: 'center', minHeight: 56 }}>
+      <StyledTitle variant="h6">
         {item.name}
         {item.description && (
           <>
@@ -29,13 +29,13 @@ export const ItemCard = ({ item }: TItemCard) => {
             </Popover>
           </>
         )}
-      </Typography>
-      <img src={import.meta.env.BASE_URL + 'images/' + item.image} alt={item.name} />
-      <Typography variant="h6">{lamaniFormatter.format(item.price)}</Typography>
+      </StyledTitle>
+      <img src={item.image} alt={item.name} />
+      <StyledCardTypography variant="h6">{lamaniFormatter.format(item.price)}</StyledCardTypography>
       {!selectedCount ? (
-        <Button variant="white" onClick={handleAdd} buttonStyle={{ marginTop: 24 }}>
+        <StyledAddToCartButton variant="white" onClick={handleAdd}>
           {item.type === 'buy' ? 'Продать' : 'Купить'}
-        </Button>
+        </StyledAddToCartButton>
       ) : (
         <StyledCardActions>
           <Button variant="primary" onClick={() => remove(item.id)}>

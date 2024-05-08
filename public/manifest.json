@@ -1,0 +1,24 @@
+{
+  "name": "Exsidium Shop",
+  "short_name": "EXSShop",
+  "description": "Shop by exsidium clan",
+  "categories": ["shop"],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "natural",
+  "lang": "ru",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "https://naboska.github.io/carusel_gp_site/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://naboska.github.io/carusel_gp_site/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
