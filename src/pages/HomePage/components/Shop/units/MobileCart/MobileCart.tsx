@@ -27,7 +27,7 @@ export const MobileCart = () => {
         header="Корзина"
         isOpen={isOpen}
         onClose={onOpen}
-        bodyStyle={{ padding: 0, maxHeight: '60vh' }}
+        bodyStyle={{ padding: 0, maxHeight: '80vh' }}
       >
         <Cart />
       </Dialog>

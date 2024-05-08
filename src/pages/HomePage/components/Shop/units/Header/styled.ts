@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Input, tabletMedia } from 'elui-react';
 
 import { HEADER_HEIGHT } from './constants';
 
@@ -18,4 +19,14 @@ export const StyledLogo = styled.img`
   height: 53px;
   margin: -9px 24px -9px 0;
   cursor: pointer;
+`;
+
+export const StyledInput = styled(Input)`
+  width: 100%;
+  max-width: 230px;
+  padding-bottom: 0;
+
+  @media (${tabletMedia}) {
+    max-width: 370px;
+  }
 `;

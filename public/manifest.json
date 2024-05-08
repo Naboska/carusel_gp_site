@@ -7,17 +7,16 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "natural",
-  "lang": "fa",
+  "lang": "ru",
   "dir": "rtl",
-  "start_url": "/?application=true",
   "icons": [
     {
-      "src": "https://naboska.github.io/carusel_gp_site/logo.png",
+      "src": "https://naboska.github.io/carusel_gp_site/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://naboska.github.io/carusel_gp_site/logo.png",
+      "src": "https://naboska.github.io/carusel_gp_site/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }

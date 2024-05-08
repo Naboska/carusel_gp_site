@@ -51,7 +51,7 @@ export const Cart = () => {
           Очистить
         </Button>
       </StyledHeader>
-      <StyledItems>
+      <StyledItems className="kek" data-scroll-lock-scrollable>
         {!selectedItems.length && (
           <Empty
             image="https://yastatic.net/s3/lavka-web/public/assets/images/emptyCart@2x.png"

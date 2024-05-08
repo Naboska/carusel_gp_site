@@ -24,7 +24,7 @@ export const StyledShop = styled.div`
   position: relative;
   display: flex;
   gap: 16px;
-  padding: 16px;
+  padding: 16px 16px 76px;
   width: 100%;
 
   @media (${tabletMedia}) {
@@ -61,6 +61,7 @@ export const StyledShopGroupItem = styled.li`
 
 export const StyledShopItems = styled.ul`
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 16px;
   list-style: none;
   margin: 0;
@@ -68,7 +69,6 @@ export const StyledShopItems = styled.ul`
 
   @media (${tabletMedia}) {
     grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (${laptopMedia}) {
